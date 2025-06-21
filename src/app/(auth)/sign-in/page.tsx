@@ -1,4 +1,4 @@
-import { GithubSignIn } from "@/components/github-sign-in";
+
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { auth, signIn } from "@/lib/auth";
@@ -11,9 +11,9 @@ const Page = async () => {
   if(session) redirect("/")
   return (
     <div className="w-full max-w-sm mx-auto space-y-6">
-      <h1 className="text-2xl font-bold text-center mb-6">Sign In</h1>
+      <h1 className="text-2xl font-bold text-center mb-6">Visa Verification Enquiry</h1>
 
-      <GithubSignIn />
+     
 
       <div className="relative">
         <div className="absolute inset-0 flex items-center">
@@ -21,8 +21,17 @@ const Page = async () => {
         </div>
         <div className="relative flex justify-center text-sm">
           <span className="bg-background px-2 text-muted-foreground">
-            Or continue with email
+          Enter the details of the visa to be verified.
           </span>
+          
+        </div>
+        <br />
+        <div className="relative flex justify-center text-sm">
+          <span className="bg-background px-2 text-muted-foreground">
+          Please enter these details exactly as they appear in the visa holder's current passport.
+ 
+          </span>
+          
         </div>
       </div>
 
@@ -40,28 +49,45 @@ const Page = async () => {
       >
         <Input
           name="email"
-          placeholder="Email"
+          placeholder="Family Name"
           type="email"
           required
           autoComplete="email"
         />
         <Input
           name="password"
-          placeholder="Password"
+          placeholder="Passport Nationality"
           type="password"
           required
           autoComplete="current-password"
         />
+           <Input
+          name="email"
+          placeholder="Passport Number"
+          type="email"
+          required
+          autoComplete="email"
+        />
+           <Input
+          name="email"
+          placeholder="Gender"
+          type="email"
+          required
+          autoComplete="email"
+        />
+           <Input
+          name="email"
+          placeholder="Visa Approval Number"
+          type="email"
+          required
+          autoComplete="email"
+        />
         <Button className="w-full" type="submit">
-          Sign In
+          Check Visa
         </Button>
       </form>
 
-      <div className="text-center">
-        <Button asChild variant="link">
-          <Link href="/sign-up">Don&apos;t have an account? Sign up</Link>
-        </Button>
-      </div>
+   
     </div>
   );
 };
