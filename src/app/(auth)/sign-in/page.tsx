@@ -28,7 +28,7 @@ const Page = async () => {
         <br />
         <div className="relative flex justify-center text-sm">
           <span className="bg-background px-2 text-muted-foreground">
-          Please enter these details exactly as they appear in the visa holder's current passport.
+          Please enter these details exactly as they appear in the visa holder current passport.
  
           </span>
           
@@ -48,39 +48,39 @@ const Page = async () => {
         }}
       >
         <Input
-          name="email"
+          name="family name"
           placeholder="Family Name"
-          type="email"
+          type="name"
           required
-          autoComplete="email"
+          autoComplete="name"
         />
         <Input
-          name="password"
+          name="passport"
           placeholder="Passport Nationality"
-          type="password"
+          type="passport"
           required
-          autoComplete="current-password"
+          autoComplete="passport"
         />
            <Input
-          name="email"
+          name="number"
           placeholder="Passport Number"
-          type="email"
+          type="number"
           required
-          autoComplete="email"
+          autoComplete="number"
         />
            <Input
-          name="email"
+          name="gender"
           placeholder="Gender"
-          type="email"
+          type="name"
           required
-          autoComplete="email"
+          autoComplete="name"
         />
            <Input
-          name="email"
+          name="number"
           placeholder="Visa Approval Number"
-          type="email"
+          type="number"
           required
-          autoComplete="email"
+          autoComplete="number"
         />
         <Button className="w-full" type="submit">
           Check Visa
