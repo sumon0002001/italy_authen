@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { auth, signIn } from "@/lib/auth";
 import { executeAction } from "@/lib/executeAction";
-import Link from "next/link";
+
 import { redirect } from "next/navigation";
 
 const Page = async () => {
